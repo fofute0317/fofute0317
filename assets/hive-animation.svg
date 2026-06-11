@@ -1,414 +1,239 @@
-<svg
-xmlns="http://www.w3.org/2000/svg"
-viewBox="0 0 1400 500"
-width="1400"
-height="500">
-
-<style>
-
-.bg{
-fill:#FFF8F3;
-}
-
-.hex{
-fill:#FFF4D6;
-stroke:#F2D089;
-stroke-width:2;
-}
-
-.honey{
-fill:#FFC847;
-opacity:0;
-animation:honeyFill 12s linear infinite;
-}
-
-@keyframes honeyFill{
-0%{opacity:0;}
-20%{opacity:0;}
-50%{opacity:1;}
-100%{opacity:1;}
-}
-
-.worker{
-animation:floatBee 3s ease-in-out infinite;
-transform-origin:center;
-}
-
-@keyframes floatBee{
-0%{transform:translateY(0);}
-50%{transform:translateY(-4px);}
-100%{transform:translateY(0);}
-}
-
-.wing{
-animation:flap .15s infinite;
-transform-origin:center;
-}
-
-@keyframes flap{
-0%{transform:scaleY(1);}
-50%{transform:scaleY(.7);}
-100%{transform:scaleY(1);}
-}
-
-.petal{
-opacity:.7;
-}
-
-</style>
-
-<rect
-class="bg"
-width="100%"
-height="100%"/>
-
-<defs>
-
-<linearGradient
-id="honeyGradient"
-x1="0"
-y1="0"
-x2="0"
-y2="1">
-
-<stop offset="0%"
-stop-color="#FFE18A"/>
-
-<stop offset="100%"
-stop-color="#F7A900"/>
-
-</linearGradient>
-
-<symbol id="hexagon">
-
-<polygon points="
-30,0
-60,17
-60,51
-30,68
-0,51
-0,17
-"/>
-
-</symbol>
-
-<symbol id="bee">
-
-<ellipse
-cx="0"
-cy="0"
-rx="16"
-ry="11"
-fill="#FFC847"/>
-
-<rect
-x="-10"
-y="-10"
-width="4"
-height="20"
-fill="#222"/>
-
-<rect
-x="0"
-y="-10"
-width="4"
-height="20"
-fill="#222"/>
-
-<ellipse
-class="wing"
-cx="-8"
-cy="-12"
-rx="8"
-ry="5"
-fill="#ffffff"
-opacity=".8"/>
-
-<ellipse
-class="wing"
-cx="8"
-cy="-12"
-rx="8"
-ry="5"
-fill="#ffffff"
-opacity=".8"/>
-
-<circle
-cx="-5"
-cy="-2"
-r="2"
-fill="#222"/>
-
-<circle
-cx="5"
-cy="-2"
-r="2"
-fill="#222"/>
-
-</symbol>
-
-</defs>
-
-<!-- SAKURA PETALS -->
-
-<g>
-
-<circle class="petal" cx="100" cy="50" r="4" fill="#FFC7D9">
-<animateMotion
-dur="18s"
-repeatCount="indefinite"
-path="M0,0 C300,100 500,200 700,450"/>
-</circle>
-
-<circle class="petal" cx="400" cy="80" r="5" fill="#FFC7D9">
-<animateMotion
-dur="22s"
-repeatCount="indefinite"
-path="M0,0 C200,80 500,300 900,420"/>
-</circle>
-
-<circle class="petal" cx="900" cy="40" r="4" fill="#FFC7D9">
-<animateMotion
-dur="20s"
-repeatCount="indefinite"
-path="M0,0 C-200,100 -300,250 -600,420"/>
-</circle>
-
-</g>
-
-<!-- QUEEN BEE -->
-
-<g>
-
-<ellipse
-cx="150"
-cy="250"
-rx="50"
-ry="35"
-fill="#FFC847"/>
-
-<rect
-x="130"
-y="215"
-width="12"
-height="70"
-fill="#222"/>
-
-<rect
-x="160"
-y="215"
-width="12"
-height="70"
-fill="#222"/>
-
-<ellipse
-cx="130"
-cy="210"
-rx="20"
-ry="12"
-fill="#fff"
-opacity=".8"/>
-
-<ellipse
-cx="170"
-cy="210"
-rx="20"
-ry="12"
-fill="#fff"
-opacity=".8"/>
-
-<polygon
-points="135,180 150,145 165,180"
-fill="#F7A900"/>
-
-<animateTransform
-attributeName="transform"
-type="translate"
-values="0 0;0 -5;0 0"
-dur="4s"
-repeatCount="indefinite"/>
-
-</g>
-
-<!-- HONEYCOMB -->
-
-<g id="grid">
-
-<!-- row 1 -->
-
-<g transform="translate(350 80)">
-<use href="#hexagon" class="hex"/>
-<use href="#hexagon" fill="url(#honeyGradient)">
-<animate attributeName="opacity"
-values="0;0;1;1"
-dur="12s"
-repeatCount="indefinite"
-begin="0s"/>
-</use>
-</g>
-
-<g transform="translate(415 80)">
-<use href="#hexagon" class="hex"/>
-<use href="#hexagon" fill="url(#honeyGradient)">
-<animate attributeName="opacity"
-values="0;0;1;1"
-dur="12s"
-repeatCount="indefinite"
-begin=".5s"/>
-</use>
-</g>
-
-<g transform="translate(480 80)">
-<use href="#hexagon" class="hex"/>
-<use href="#hexagon" fill="url(#honeyGradient)">
-<animate attributeName="opacity"
-values="0;0;1;1"
-dur="12s"
-repeatCount="indefinite"
-begin="1s"/>
-</use>
-</g>
-
-<g transform="translate(545 80)">
-<use href="#hexagon" class="hex"/>
-<use href="#hexagon" fill="url(#honeyGradient)">
-<animate attributeName="opacity"
-values="0;0;1;1"
-dur="12s"
-repeatCount="indefinite"
-begin="1.5s"/>
-</use>
-</g>
-
-<g transform="translate(610 80)">
-<use href="#hexagon" class="hex"/>
-<use href="#hexagon" fill="url(#honeyGradient)">
-<animate attributeName="opacity"
-values="0;0;1;1"
-dur="12s"
-repeatCount="indefinite"
-begin="2s"/>
-</use>
-</g>
-
-<!-- row 2 -->
-
-<g transform="translate(382 135)">
-<use href="#hexagon" class="hex"/>
-</g>
-
-<g transform="translate(447 135)">
-<use href="#hexagon" class="hex"/>
-</g>
-
-<g transform="translate(512 135)">
-<use href="#hexagon" class="hex"/>
-</g>
-
-<g transform="translate(577 135)">
-<use href="#hexagon" class="hex"/>
-</g>
-
-<g transform="translate(642 135)">
-<use href="#hexagon" class="hex"/>
-</g>
-
-<!-- row 3 -->
-
-<g transform="translate(350 190)">
-<use href="#hexagon" class="hex"/>
-</g>
-
-<g transform="translate(415 190)">
-<use href="#hexagon" class="hex"/>
-</g>
-
-<g transform="translate(480 190)">
-<use href="#hexagon" class="hex"/>
-</g>
-
-<g transform="translate(545 190)">
-<use href="#hexagon" class="hex"/>
-</g>
-
-<g transform="translate(610 190)">
-<use href="#hexagon" class="hex"/>
-</g>
-
-</g>
-
-<!-- BEE PATHS -->
-
-<path
-id="route1"
-fill="none"
-stroke="none"
-d="M300,300 C500,150 700,220 900,140"/>
-
-<path
-id="route2"
-fill="none"
-stroke="none"
-d="M500,400 C650,250 850,320 1100,180"/>
-
-<!-- WORKER BEES -->
-
-<g class="worker">
-
-<use href="#bee">
-
-<animateMotion
-dur="8s"
-repeatCount="indefinite">
-
-<mpath href="#route1"/>
-
-</animateMotion>
-
-</use>
-
-</g>
-
-<g class="worker">
-
-<use href="#bee">
-
-<animateMotion
-dur="12s"
-repeatCount="indefinite">
-
-<mpath href="#route2"/>
-
-</animateMotion>
-
-</use>
-
-</g>
-
-<g class="worker">
-
-<use href="#bee">
-
-<animateMotion
-dur="10s"
-repeatCount="indefinite"
-path="M350,250 C600,100 850,300 1200,100"/>
-
-</use>
-
-</g>
-
-<!-- TITLE -->
-
-<text
-x="700"
-y="460"
-text-anchor="middle"
-font-size="28"
-font-family="Verdana"
-fill="#8B5A2B">
-
-🌸 Sakurabee Hive Activity 🍯
-
-</text>
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 420">
+
+  <rect width="1200" height="420" fill="#FFF8F3"/>
+
+  <defs>
+
+    <linearGradient id="honey">
+      <stop offset="0%" stop-color="#FFE18A"/>
+      <stop offset="100%" stop-color="#FFC847"/>
+    </linearGradient>
+
+    <polygon id="hex"
+      points="25,0 50,14 50,42 25,56 0,42 0,14"/>
+
+    <g id="bee">
+      <ellipse cx="0" cy="0" rx="10" ry="7" fill="#FFC847"/>
+      <rect x="-4" y="-7" width="2" height="14" fill="#222"/>
+      <rect x="2" y="-7" width="2" height="14" fill="#222"/>
+
+      <ellipse cx="-5" cy="-8" rx="4" ry="2"
+               fill="white" opacity="0.7">
+        <animateTransform
+          attributeName="transform"
+          type="scale"
+          values="1 1;1 .6;1 1"
+          dur="0.15s"
+          repeatCount="indefinite"/>
+      </ellipse>
+
+      <ellipse cx="5" cy="-8" rx="4" ry="2"
+               fill="white" opacity="0.7">
+        <animateTransform
+          attributeName="transform"
+          type="scale"
+          values="1 1;1 .6;1 1"
+          dur="0.15s"
+          repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+  </defs>
+
+  <!-- Sakura petals -->
+
+  <circle cx="150" cy="40" r="4" fill="#FFB6C8">
+    <animate attributeName="cy"
+             values="40;380"
+             dur="18s"
+             repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="600" cy="20" r="5" fill="#FFC7D9">
+    <animate attributeName="cy"
+             values="20;390"
+             dur="22s"
+             repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1000" cy="50" r="4" fill="#FFB6C8">
+    <animate attributeName="cy"
+             values="50;400"
+             dur="20s"
+             repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Queen Bee -->
+
+  <g transform="translate(120 180)">
+
+    <ellipse cx="0" cy="0" rx="40" ry="28"
+             fill="#FFC847"/>
+
+    <rect x="-15" y="-28"
+          width="8" height="56"
+          fill="#222"/>
+
+    <rect x="8" y="-28"
+          width="8" height="56"
+          fill="#222"/>
+
+    <ellipse cx="-18" cy="-22"
+             rx="12" ry="7"
+             fill="white"
+             opacity="0.7"/>
+
+    <ellipse cx="18" cy="-22"
+             rx="12" ry="7"
+             fill="white"
+             opacity="0.7"/>
+
+    <polygon points="-10,-45 0,-70 10,-45"
+             fill="#F7A900"/>
+
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="120 180;120 172;120 180"
+      dur="4s"
+      repeatCount="indefinite"/>
+
+  </g>
+
+  <!-- Honeycomb -->
+
+  <g>
+
+    <!-- Row 1 -->
+
+    <g transform="translate(300 70)">
+      <use href="#hex" fill="#FFF4D6" stroke="#E5C57A"/>
+      <use href="#hex" fill="url(#honey)" opacity="0">
+        <animate attributeName="opacity"
+                 values="0;0;1;1"
+                 dur="12s"
+                 begin="0s"
+                 repeatCount="indefinite"/>
+      </use>
+    </g>
+
+    <g transform="translate(360 70)">
+      <use href="#hex" fill="#FFF4D6" stroke="#E5C57A"/>
+      <use href="#hex" fill="url(#honey)" opacity="0">
+        <animate attributeName="opacity"
+                 values="0;0;1;1"
+                 dur="12s"
+                 begin="1s"
+                 repeatCount="indefinite"/>
+      </use>
+    </g>
+
+    <g transform="translate(420 70)">
+      <use href="#hex" fill="#FFF4D6" stroke="#E5C57A"/>
+      <use href="#hex" fill="url(#honey)" opacity="0">
+        <animate attributeName="opacity"
+                 values="0;0;1;1"
+                 dur="12s"
+                 begin="2s"
+                 repeatCount="indefinite"/>
+      </use>
+    </g>
+
+    <g transform="translate(480 70)">
+      <use href="#hex" fill="#FFF4D6" stroke="#E5C57A"/>
+      <use href="#hex" fill="url(#honey)" opacity="0">
+        <animate attributeName="opacity"
+                 values="0;0;1;1"
+                 dur="12s"
+                 begin="3s"
+                 repeatCount="indefinite"/>
+      </use>
+    </g>
+
+    <g transform="translate(540 70)">
+      <use href="#hex" fill="#FFF4D6" stroke="#E5C57A"/>
+      <use href="#hex" fill="url(#honey)" opacity="0">
+        <animate attributeName="opacity"
+                 values="0;0;1;1"
+                 dur="12s"
+                 begin="4s"
+                 repeatCount="indefinite"/>
+      </use>
+    </g>
+
+    <!-- Row 2 -->
+
+    <g transform="translate(330 120)">
+      <use href="#hex" fill="#FFF4D6" stroke="#E5C57A"/>
+    </g>
+
+    <g transform="translate(390 120)">
+      <use href="#hex" fill="#FFF4D6" stroke="#E5C57A"/>
+    </g>
+
+    <g transform="translate(450 120)">
+      <use href="#hex" fill="#FFF4D6" stroke="#E5C57A"/>
+    </g>
+
+    <g transform="translate(510 120)">
+      <use href="#hex" fill="#FFF4D6" stroke="#E5C57A"/>
+    </g>
+
+    <g transform="translate(570 120)">
+      <use href="#hex" fill="#FFF4D6" stroke="#E5C57A"/>
+    </g>
+
+  </g>
+
+  <!-- Worker Bee 1 -->
+
+  <g>
+    <use href="#bee">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="260 260;700 120;260 260"
+        dur="10s"
+        repeatCount="indefinite"/>
+    </use>
+  </g>
+
+  <!-- Worker Bee 2 -->
+
+  <g>
+    <use href="#bee">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="350 320;900 180;350 320"
+        dur="12s"
+        repeatCount="indefinite"/>
+    </use>
+  </g>
+
+  <!-- Worker Bee 3 -->
+
+  <g>
+    <use href="#bee">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="500 260;1000 120;500 260"
+        dur="9s"
+        repeatCount="indefinite"/>
+    </use>
+  </g>
+
+  <!-- Title -->
+
+  <text x="600"
+        y="390"
+        text-anchor="middle"
+        font-size="24"
+        font-family="Verdana"
+        fill="#8B5A2B">
+    🌸 Sakurabee Hive Activity 🍯
+  </text>
+
+</svg>
