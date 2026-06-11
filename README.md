@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="YOUR_BANNER_URL" width="100%" />
+<img src="/assets/sakurabee.png" width="100%" />
 
 <br>
 
