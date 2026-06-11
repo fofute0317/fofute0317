@@ -141,7 +141,10 @@
 🐝 Teamwork
 🐝 Diligence
 🐝 Value Creation
-<img src="./assets/hive-animation.svg" width="100%">
+## 🍯 Hive Activity
+
+<img src="https://raw.githubusercontent.com/fofute0317/fofute0317/master/assets/hive-animation.svg" width="100%">
+
 ---
 
 <div align="center">
