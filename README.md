@@ -20,27 +20,25 @@
 
 <!-- Editable Placeholder -->
 
-ここに自己紹介を記載してください。
-
 * 専門分野:
 
-  * XXXXX
-  * XXXXX
-  * XXXXX
+  * Web system
+  * Web site
+  * AI automatic tool
 
 * 得意なこと:
 
-  * XXXXX
-  * XXXXX
-  * XXXXX
+  * NextJS
+  * Node, Nest
+  * Python, OpenAI, Claud
 
 * 現在取り組んでいること:
 
-  * XXXXX
+  * AI assistant development
 
 * 興味があること:
 
-  * XXXXX
+  * Football
 
 ---
 
@@ -96,20 +94,6 @@
 
 ---
 
-## 🍯 Honey Production System
-
-<div align="center">
-
-```text
-⬢⬢⬢⬡⬡⬡⬡⬡⬡⬡
-⬢⬢⬢⬢⬡⬡⬡⬡⬡⬡
-⬢⬢⬢⬢⬢⬡⬡⬡⬡⬡
-⬢⬢⬢⬢⬢⬢⬡⬡⬡⬡
-⬢⬢⬢⬢⬢⬢⬢⬡⬡⬡
-```
-
-🐝🐝🐝 Worker bees continuously gather nectar and fill the hive with honey.
-
 </div>
 
 ---
@@ -118,15 +102,15 @@
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_NAME" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=fofute0317" />
 
 <br>
 
-<img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_NAME&show_icons=true" />
+<img src="https://github-readme-stats.vercel.app/api?username=fofute0317&show_icons=true" />
 
 <br>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_NAME&layout=compact" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=fofute0317&layout=compact" />
 
 </div>
 
