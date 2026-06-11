@@ -141,7 +141,7 @@
 🐝 Teamwork
 🐝 Diligence
 🐝 Value Creation
-
+<img src="./assets/hive-animation.svg" width="100%">
 ---
 
 <div align="center">
