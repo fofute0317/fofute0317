@@ -1,4 +1,4 @@
-# Hi, I'm Kentaro Suzuki 👋
+# Hi, I'm Kazuhiro Naka 👋
 
 # 🌸🐝 Sakurabee
 
