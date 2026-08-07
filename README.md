@@ -1,6 +1,6 @@
 # Hi, I'm Kazuhiro Naka 👋
 
-# 🌸🐝 Sakurabee
+# 🌸 Sakurabee
 
 <div align="center">
 
